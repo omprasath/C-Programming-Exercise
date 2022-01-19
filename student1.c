@@ -18,7 +18,7 @@ void main()
     while(another=='y')
     {
         printf("\nEnter name :");
-        scanf("%s",&name);
+        scanf("%s",name);
         printf("Enter your Roll No.:");
         scanf("%d",&role);
         printf("Enter marks in PPS:");
@@ -34,7 +34,7 @@ void main()
         fprintf(fp,"%d\t%s\t%d\t%d\t%d\t%d\t%d\n",role, name, marks1,marks2,marks3,marks4,marks5);
         printf("Add another record (y/n): ");
         fflush(stdin);
-        another=getche();
+        another=getch();
     }
     fclose(fp);
 }
